@@ -1,0 +1,738 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@font-face {
+    font-family: "Segoe bold";
+    src: url(/fonts/Segoe\ UI\ Bold.ttf);
+}
+
+@font-face {
+    font-family: "Segoe UI";
+    src: url(/fonts/Segoe\ UI.ttf);
+}
+
+body {
+    font-family: "Segoe bold";
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* HEADER */
+
+header {
+    width: 100%;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    margin: 0 auto;
+    align-items: center;
+    padding: 0 30px;
+    gap: 323px;
+}
+
+.nav__list {
+    display: flex;
+    column-gap: 60px;
+    list-style-type: none;
+    align-items: center;
+}
+
+.nav__list--item {
+    font-size: 16px;
+}
+
+.nav__list--item-link {
+    color: #666666;
+    text-decoration: none;
+}
+
+.btn-nav {
+    width: 170px;
+    height: 50px;
+    background-color: #4579CB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 8px;
+    color: #FFFFFF;
+    transition: all 0.5s ease;
+}
+
+/* HEADER END */
+
+/* INTRO SECTION START */
+
+#intro {
+    display: flex;
+    flex-direction: column;
+    min-height: 771px;
+    width: 100%;
+    background-image: url(/icons/Union.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 1046px;
+    text-align: center;
+    margin: 126px auto;
+}
+
+.intro__title {
+    font-size: 58px;
+    color: #474747;
+    line-height: 70px;
+}
+
+.intro__title span {
+    color: #4579CB;
+}
+
+.intro__text {
+    color: #666666;
+    font-weight: 400 !important;
+    font-size: 16px;
+    max-width: 828px;
+    text-align: center;
+    margin: 38px auto;
+}
+
+.intro__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4579CB;
+    border-radius: 8px;
+    border: none;
+    width: 170px;
+    height: 50px;
+    color: #FFFFFF;
+    margin: 38px auto 21px;
+    transition: 0.5s ease;
+}
+
+.wrapper a span {
+    color: #666666;
+    position: relative;
+    top: -4px;
+    font-family: "Segoe UI";
+    margin-left: 11px;
+}
+
+/* INTRO SECTION END */
+
+/* SERVICE  */
+
+#service {
+    min-height: 265px;
+    width: 100%;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.service__title {
+    font-family: "Seoge regular";
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 26px;
+    margin: auto 46px;
+    color: #474747;
+    margin-bottom: 20px;
+}
+
+.service__text {
+    font-family: "Seoge regular";
+    font-weight: 400;
+    font-size: 16px;
+    max-width: 875px;
+    margin: 0 auto;
+    margin-bottom: 46px;
+}
+
+.slider {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+.slider img {
+    filter: grayscale(1);
+    transition: all 0.3s ease;
+}
+
+.slider img:hover {
+    filter: grayscale(0);
+}
+
+.dot span {
+    width: 16px;
+    height: 16px;
+    background-color: #E6E6E6;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.active-dot {
+    width: 20px !important;
+    height: 20px !important;
+    background-color: #4579CB !important;
+}
+
+.btn-hover:hover {
+    cursor: pointer;
+    background-color: #FFFFFF;
+    border: 2px solid #4579CB;
+    color: #4579CB;
+}
+
+/* SERVICE END */
+
+/* INFO START */
+
+.info {
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.info-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+    margin-bottom: 120px;
+}
+
+.info-card1 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 90px;
+}
+
+.card-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 558px;
+    height: 306px;
+}
+
+.card-title h1 {
+    font-family: "Seorge regular";
+    font-weight: 700;
+    font-size: 26px;
+    color: #474747;
+    margin-bottom: 24px;
+}
+
+.card-title p {
+    font-family: "Seorge regular";
+    margin-bottom: 30px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #666666;
+}
+
+.info-btn {
+    width: 170px;
+    height: 50px;
+    background-color: #4579CB;
+    border: none;
+    border-radius: 8px;
+    color: #FFFFFF;
+    transition: all 0.5s ease;
+}
+
+/* INFO END */
+
+/* Why Socielity start*/
+
+.why {
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+
+.why-title {
+    font-family: "Seorge bold";
+    font-weight: 700;
+    font-size: 26;
+    line-height: 48px;
+    color: #474747;
+    margin-bottom: 24px;
+}
+
+.why-info {
+    font-family: "Segoe regular";
+    font-weight: 400;
+    font-size: 16px;
+    width: 743px;
+    height: 73px;
+    text-align: center;
+    color: #666666;
+    margin-bottom: 51px;
+}
+
+.why-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 120px
+}
+
+.why-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 267px;
+    background: #F6F7FD;
+    border-radius: 8px;
+}
+
+.why-card-title {
+    font-family: "Seorge regular";
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    color: #474747;
+    margin-top: 15px;
+}
+
+.why-card-info {
+    font-family: "Seorge regular";
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: #666666;
+    margin-top: 12px;
+}
+
+/* Why Socielity end */
+
+/* Reviews start */
+
+.reviews {
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.wrapper-reviews {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 110px;
+}
+
+.text-button {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.text-button h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #474747;
+    margin-bottom: 4px;
+}
+
+.director {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #474747;
+    margin-bottom: 19px;
+}
+
+.review {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    color: #474747;
+    text-align: start;
+    margin-bottom: 36px;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.left-btn {
+    width: 70px;
+    height: 40px;
+    background: #E6E6E6;
+    border: none;
+    border-radius: 4px;
+}
+
+.right-btn {
+    width: 70px;
+    height: 40px;
+    background: #4579CB;
+    border: none;
+    border-radius: 4px;
+}
+
+/* Reviews wnd */
+
+/* VIDEO START */
+
+.videos {
+    display: flex;
+    gap: 30px;
+    margin-top: 60px;
+}
+
+.video-title {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 48px;
+    text-align: center;
+    color: #474747;
+    margin-bottom: 24px;
+}
+
+.video-info {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #666666;
+}
+
+.video-whith-height {
+    width: 570px;
+    height: 350px;
+    background: #C4C4C4;
+    border-radius: 30px;
+}
+
+.video-left,
+iframe {
+    width: 570px;
+    height: 350px;
+    border-radius: 30px;
+}
+
+/* VIDEO END */
+
+/* FAQ start */
+
+#faq {
+    margin: 120px 135px;
+}
+
+.container-faq {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 555px;
+}
+
+.container-faq h1 {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 48px;
+    text-align: center;
+    color: #474747;
+    margin-bottom: 24px;
+}
+
+.container-faq p {
+    width: 888px;
+    height: 52px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #666666;
+    margin-bottom: 52px;
+}
+
+.wrapper-faq {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.select {
+    display: flex;
+    flex-direction: column;
+    gap: 33px;
+}
+
+.select select {
+    width: 570px;
+    height: 70px;
+    background: #FFFFFF;
+    border: 1px solid #CACACA;
+    border-radius: 10px;
+}
+
+/* FAQ end */
+
+/* AWEP start */
+
+#awep {
+    margin: 0 auto;
+}
+
+.awep-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 120px
+}
+
+.awep-title {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 48px;
+    text-align: center;
+    color: #474747;
+    margin-bottom: 24px
+}
+
+.awep-text {
+    width: 875px;
+    height: 48px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #666666;
+    margin-bottom: 55px;
+}
+
+.awep-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 35px;
+}
+
+.awep-card {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    width: 170px;
+    height: 239px;
+    background: #FFFFFF;
+    border-radius: 16px;
+}
+
+.awep-card h1 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: #4579CB;
+}
+
+.awep-card p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    color: #666666;
+}
+
+.subscribe-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.subscribe-container h1 {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 48px;
+    text-align: center;
+    color: #474747;
+    margin-bottom: 24px;
+}
+
+.subscribe-container p {
+    width: 770px;
+    height: 60px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #666666;
+    margin-bottom: 33px;
+}
+
+.email-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 770px;
+    height: 80px;
+    background: #E6E6E6;
+    border-radius: 16px;
+}
+
+.email-input input {
+    margin-left: 20px;
+    width: 260px;
+    height: 28px;
+}
+
+.email-input input::placeholder {
+    width: 260px;
+    height: 28px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #666666;
+    background: #E6E6E6;
+    border: none;
+}
+
+.email-input button {
+    width: 170px;
+    height: 50px;
+    background: #4579CB;
+    border: none;
+    border-radius: 8px;
+    margin-right: 20px;
+    color: #FFFFFF;
+}
+
+footer {
+    width: 100%;
+    height: 336px;
+    background: #4579CB;
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.footer-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    gap: 30px;
+    margin: 44px 300px;
+}
+
+.footer-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.company {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: start;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.footer-card h1 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: start;
+    color: #FFFFFF;
+}
+
+.footer-card1 p {
+    width: 278px;
+    height: 153px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.footer-card p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    display: flex;
+    align-items: start;
+    color: #FFFFFF;
+}
+
+.footer-card-social {
+    width: 278px;
+    height: 153px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+
+
+/* AWEP end */
